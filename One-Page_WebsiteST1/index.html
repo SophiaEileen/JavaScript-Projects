@@ -1,0 +1,237 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>The U.S.S Enterprise NCC-1701</title>
+    <link rel="stylesheet" href="./css/shared.css">
+    <link rel="stylesheet" type="text/css" href="./css/one_page_website.css">
+	
+	<script src="./js/one_page_website.js"></script>
+</head>
+
+<body style="background-color:rgb(22, 64, 70);">
+	
+	<!-- Nav -->
+	<div class="menu">
+		<ul>
+			<a href="#home" id="link">
+				<li>HOME</li>
+			</a>
+			<a href="#gallery">
+				<li>GALLERY</li>
+			</a>
+			<a href="#contact">
+				<li>RESERVATIONS</li>
+			</a>
+		</ul>
+	</div>
+	<!-- END NAV -->
+
+	<blockquote>
+		<h1>
+			<em>
+				
+					"Space: the final frontier. These are the voyages of the starship Enterprise.
+					Its five-year mission: to explore strange new worlds.
+					To seek out new life and new civilizations.
+					To boldly go where no man has gone before!"
+				
+			</em>
+		</h1>
+	</blockquote>
+
+	<!-- HOME -->
+	<div id="home">
+		<div class="container">
+			<div class="text-center">
+				<span class="head-main">The U.S.S Enterprise NCC-1701</span>
+			</div>
+		</div>
+	</div>
+	<!--END HOME -->
+	<!-- EMBEDED VIDEO -->
+	<h1>Take A Dive Into The Star Trek Universe</h1>
+	<h2> Please see the link below to learn more about Star Trek with StarTrek.com</h2>
+	<a href="https://www.startrek.com/shows/star-trek-the-original-series"> Star Trek: The Original Series</a>
+
+	<h3>See below for some of Spock's best moments.</h3>
+	<p>
+		<iframe width="885" height="664" src="https://www.youtube.com/embed/ldezDyDDhRg" 
+		title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+		encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+	</p>
+		  <!-- GALLERY -->
+	<!-- LIGHTBOX CODE-->
+	<section id="gallery">
+        <div class="container">
+				<h1>Gallery</h1>
+				<div class="flex-container">
+					
+	<!-- Images used to open the lightbox -->
+	<div class="row">
+
+	<div class="row">
+		<div class="column">
+			<img src="images/thumbnail_1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" alt="">
+		</div>
+		<div class="column">
+			<img src="images/thumbnail_2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor" alt="">
+		</div>
+		<div class="column">
+			<img src="images/thumbnail_3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor" alt="">
+		</div>
+		<div class="column">
+			<img src="images/thumbnail_4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" alt="">
+		</div>
+		<div class="column">
+			<img src="images/thumbnail_5.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor" alt="">
+		</div>
+		<div class="column">
+			<img src="images/thumbnail_6.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor" alt="">
+		</div>
+		<div class="column">
+			<img src="images/thumbnail_7.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor" alt="">
+		</div>
+		<div class="column">
+			<img src="images/thumbnail_8.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor" alt="">
+		
+	</div>
+
+	<!-- The Modal/Lightbox -->
+	<div id="myModal" class="modal">
+		<span class="close cursor" onclick="closeModal()">&times;</span>
+		<div class="modal-content">
+
+			<div class="mySlides">
+				<div class="numbertext"> 1 / 9</div>
+				<img src="images/thumbnail_1.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext"> 2 / 9</div>
+				<img src="images/thumbnail_2.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext"> 3 / 9</div>
+				<img src="images/thumbnail_3.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext"> 4 / 9</div>
+				<img src="images/thumbnail_4.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext"> 5 / 9</div>
+				<img src="images/thumbnail_5.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext"> 6 / 9</div>
+				<img src="images/thumbnail_6.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext"> 7 / 9</div>
+				<img src="images/thumbnail_7.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext"> 8 / 9</div>
+				<img src="images/thumbnail_8.jpg" style="width:100%">
+			</div>
+
+
+			<!-- Next/previous controls -->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			<!-- Caption text -->
+			<div class="caption-container">
+				<p id="caption"></p>
+			</div>
+
+			<!-- Thumbnail image controls -->
+			<div class="column">
+				<img class="demo cursor" src="images/thumbnail_1.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Bridge.">
+			</div>
+			<div class="column">
+				<img class="demo cursor" src="images/thumbnail_2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Engineering.">
+			</div>
+			<div class="column">
+				<img class="demo cursor" src="images/thumbnail_3.jpg" style="width:100%" onclick="currentSlide(3)" alt="The Transport Room.">
+			</div>
+			<div class="column">
+				<img class="demo cursor" src="images/thumbnail_4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Sick Bay.">
+			</div>
+			<div class="column">
+				<img class="demo cursor" src="images/thumbnail_5.jpg" style="width:100%" onclick="currentSlide(5)" alt="The Bridge.">
+			</div>
+			<div class="column">
+				<img class="demo cursor" src="images/thumbnail_6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Engineering.">
+			</div>
+			<div class="column">
+				<img class="demo cursor" src="images/thumbnail_7.jpg" style="width:100%" onclick="currentSlide(7)" alt="The Transport Room.">
+			</div>
+			<div class="column">
+				<img class="demo cursor" src="images/thumbnail_8.jpg" style="width:100%" onclick="currentSlide(8)" alt="Sick Bay.">
+			</div>
+			<div class="column">
+				<img class="demo cursor" src="images/thumbnail_9.jpg" style="width:100%" onclick="currentSlide(9)" alt="Sick Bay.">
+			</div>
+		</div>
+	</div>
+</section>
+	<!--END LIGHTBOX-->
+	<!-- END GALLERY -->
+	<!-- RSVP-->
+	<section id="contact">
+		<div class="container">
+			<div class="heading-padding">
+				<h1 class="heading-padding">Reservations</h1>
+				<div class="reservation">
+					<h2>
+						<span><em> To Boldy Go Where No Man Has Gone Before.</em></span>
+						<br />Reserve your tour today!
+					</h2>
+					<p class="rsvp-text">
+						Please provide us with your basic contact information.
+					</p>
+					<div class="form-rsvp">
+						<form action=" " method="post">
+							<input class="rsvp" type="text" value="First Name">
+							<input class="rsvp" type="text" value="Last Name">
+							<input class="rsvp" type="text" value="Email Address">
+							<input class="rsvp" type="text" value="Phone Number">
+							<div class="form-spacer">
+								<label class="terms">Terms and Conditions</label>
+							</div>
+							<div class="submit">
+								<input type="submit" value="Submit">
+							</div>
+						</form>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!--END RSVP -->
+	<!-- FOOTER -->
+	<!--FOOTER -->
+	<div id="footer">
+		<div>
+			<p>
+				Website administrator: <a href="sophia.e.jordan@gmail.com">Sophia.e.jordan@gmail.com</a> &nbsp;|&nbsp;
+				<a href="https://www.startrek.com/">Star Trek Official Website</a> &nbsp;|&nbsp;
+				Tour The Enterprise &copy; Star Trek 2266.
+		</div>
+	</div>
+	<!--FOOTER END-->
+
+</body>
+		
+</html>
